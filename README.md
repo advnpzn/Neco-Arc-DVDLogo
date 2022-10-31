@@ -1,6 +1,12 @@
 # Neco-Arc-DVDLogo
 DVD Logo but it's Neco-Arc done using C++ and SFML.
 
+![output](https://github.com/adenosinetp10/Neco-Arc-DVDLogo/blob/main/output.gif)
+
+## Hotkeys
+
+Press `S`
+
 ## Build Yourself
 ### Ubuntu
 Must have g++.
