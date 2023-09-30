@@ -17,7 +17,7 @@ auto Neco::initNeco() -> void
     isTextHidden = true;
     edgeCount = 0;
 
-    if (!font.loadFromFile("raleway-m.ttf"))
+    if (!font.loadFromFile("res/raleway-m.ttf"))
     {
         std::cout << "Error loading font file :(\n";
     }
@@ -25,13 +25,13 @@ auto Neco::initNeco() -> void
     text.setCharacterSize(15);
     text.setPosition(sf::Vector2f(10.f, 10.f));
 
-    if (!texture.loadFromFile("neco-arc.png"))
+    if (!texture.loadFromFile("res/neco-arc.png"))
     {
         std::cout << "Error loading texture from file :(\n";
     }
     texture.setSmooth(true);
 
-    if (!sBuffer.loadFromFile("burenyaa.wav"))
+    if (!sBuffer.loadFromFile("res/burenyaa.wav"))
     {
         std::cout << "Error loading audio file :( \n";
     }
