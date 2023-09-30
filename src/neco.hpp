@@ -5,7 +5,6 @@
 #include <SFML/Audio.hpp>
 #include <iostream>
 
-
 class Neco
 {
 
@@ -34,7 +33,6 @@ public:
     void setIsTextHidden(bool val);
     bool getIsTextHidden();
 
-    sf::Sprite& draw();
-    sf::Text& drawText();
-
+    sf::Sprite &draw();
+    sf::Text &drawText();
 };

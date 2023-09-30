@@ -67,7 +67,7 @@ auto Neco::checkEdge(sf::Vector2f windowCoords) -> void
     }
 
     if (y <= 0)
-    { 
+    {
         sy = -sy;
         burenyaa();
         edgeCount++;
@@ -90,7 +90,7 @@ void Neco::burenyaa()
     sound.play();
 }
 
-sf::Sprite& Neco::draw()
+sf::Sprite &Neco::draw()
 {
     return sprite;
 }
@@ -100,8 +100,7 @@ auto Neco::showText(sf::Vector2f coords) -> void
     std::string wcoords = "Window coords = (" + std::to_string(int(coords.x)) + ", " + std::to_string(int(coords.y)) + ")\n";
     std::string xy = "(x, y) = (" + std::to_string(int(x)) + ", " + std::to_string(int(y)) + ")\n";
     std::string edgec = "Edge Count = " + std::to_string(edgeCount) + "\n";
-    text.setString(wcoords+xy+edgec);
-
+    text.setString(wcoords + xy + edgec);
 }
 
 void Neco::setIsTextHidden(bool val)
@@ -114,7 +113,7 @@ bool Neco::getIsTextHidden()
     return isTextHidden;
 }
 
-sf::Text& Neco::drawText()
+sf::Text &Neco::drawText()
 {
     return text;
 }

@@ -9,11 +9,11 @@ int main()
     sf::RenderWindow window(sf::VideoMode(800.f, 500.f), "mitochondria", sf::Style::Close);
     window.setFramerateLimit(60);
 
-    while(window.isOpen())
+    while (window.isOpen())
     {
         s = neco.getIsTextHidden();
         sf::Event event;
-        while(window.pollEvent(event))
+        while (window.pollEvent(event))
         {
             switch (event.type)
             {
@@ -32,14 +32,14 @@ int main()
                         neco.setIsTextHidden(true);
                     }
                 }
-                
+
             default:
                 break;
             }
         }
 
         neco.moveNeco();
-        sf::Vector2f coords = sf::Vector2f(window.getSize().x,window.getSize().y);
+        sf::Vector2f coords = sf::Vector2f(window.getSize().x, window.getSize().y);
         neco.checkEdge(coords);
         neco.setPosNeco();
         neco.showText(coords);
