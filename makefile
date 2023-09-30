@@ -1,14 +1,14 @@
 all: neco
-	./neco
+	./src/neco
 
-neco: main.o neco.o
-	g++ -std=c++17 -o neco main.o neco.o -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+neco: src/main.o src/neco.o
+	g++ -std=c++17 -o src/neco src/main.o src/neco.o -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 
-neco.o : neco.cpp neco.hpp
-	g++ -std=c++17 -c neco.cpp
+neco.o : src/neco.cpp src/neco.hpp
+	g++ -std=c++17 -c src/neco.cpp
 
-main.o : main.cpp
-	g++ -std=c++17 -c main.cpp
+main.o : src/main.cpp
+	g++ -std=c++17 -c src/main.cpp
 
 clean:
-	rm -rf *.o neco
+	rm -rf src/*.o src/neco
