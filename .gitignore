@@ -1,0 +1,4 @@
+*.o
+neco
+build/
+.vscode/
